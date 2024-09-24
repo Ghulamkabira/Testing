@@ -1,0 +1,32 @@
+nav {
+  background-color:aqua;
+  color: white; /* White text color */
+  padding: 1rem; /* Some padding */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+h4 {
+  margin: 0; /* Remove default margin */
+}
+
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Flexbox for horizontal layout */
+}
+
+li {
+  margin-left: 20px; /* Space between items */
+}
+
+a {
+  color: white; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make links bold */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
