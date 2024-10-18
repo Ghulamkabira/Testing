@@ -1,4 +1,5 @@
-// fetching  data by using fetch
+
+
 import React, { useEffect, useState } from "react";
 function Kanz(){
         const[data,setData]=useState([]);
@@ -34,6 +35,8 @@ async function dataFetch(){
   const response=await axios.get(link)
   setPost(response.data)
 }
+dataFetch()
+
 },[])
 
 return(
