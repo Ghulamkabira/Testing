@@ -1,16 +1,28 @@
 import React from "react";
-import { ApiProvider } from "./componnets/context/ApiData";
-import Home from './componnets/home';
-import Sa from './componnets/sa';
-function App(){
-
-      return(
-            <>
-            <ApiProvider>
-                  <Sa/>
-                  <Home/>
-            </ApiProvider>
-            </>
-      )
-}
-export default App
+import { createBrowserRouter as Route,Router } from "react-router-dom";
+import {
+       createBrowserRouter,
+       RouterProvider
+    } from "react-router-dom"
+    function App(){
+    const router=createBrowserRouter([
+           {
+             path:"/counter",
+             element:<Counter/>
+           },
+           {
+             path:"/kab",
+             element:<Kab/>
+           },
+           {
+            path:"/mui",
+            element:<Mui/>
+           }
+    ])
+    return(
+      <>
+      <RouterProvider router={router}/>
+      </>
+    )
+  }
+  export default App;

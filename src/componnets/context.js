@@ -2,13 +2,15 @@ import React from "react";
 import { createContext } from "react";
 export const BioContext=createContext();
 const BioProvider=({children})=>{
-   const name='haider';
-   return(
-   
-    <BioContext.Provider value={name}>
+   const name='ali';
+
+return(
+    <>
+      <BioContext.Provider value={name}>
         {children}
-    </BioContext.Provider>
-  
-    )
-    }
-export default BioProvider; 
+      </BioContext.Provider>
+    </>
+)
+}
+export default BioProvider
+

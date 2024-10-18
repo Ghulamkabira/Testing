@@ -30,7 +30,7 @@ import{
          return(
         <>
         <Navbar/>
-        <RouterProvider router={router}/>
+        <RouterProvider router={rou ter}/>
         </>
         )
         }
